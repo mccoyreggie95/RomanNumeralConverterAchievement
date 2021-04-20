@@ -7,8 +7,8 @@ public class TestRomanNumeralConverter {
     @Test
     public void testToIntConverter() {
         StringToRomanNumeralConverter converter = new StringToRomanNumeralConverter();
-        int expected = 1;
-        int actual = converter.convert("i");
+        int expected = 11;
+        int actual = converter.convert("xi");
         Assertions.assertEquals(expected, actual);
     }
 }
