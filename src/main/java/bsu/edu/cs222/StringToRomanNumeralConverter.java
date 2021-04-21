@@ -58,6 +58,9 @@ public class StringToRomanNumeralConverter {
             finalInteger += 1;
             stringQuery = stringQuery.replaceFirst("I","");
         }
+        if (finalInteger > 3000 || finalInteger <= 0){
+            System.out.println("Query out of scope or invalid");
+        }
         return finalInteger;
     }
 }
