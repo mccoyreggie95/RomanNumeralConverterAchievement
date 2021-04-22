@@ -8,22 +8,23 @@ public class StringToRomanNumeralConverter {
         stringQuery = stringQuery.toUpperCase();
         int finalInteger = 0;
 
-        Map<String, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<>();
         //map.put("CM", 900);
-        map.put("M", 1000);
+        map.put('M', 1000);
         //map.put("CD", 400);
-        map.put("D", 500);
+        map.put('D', 500);
         //map.put("XC", 90);
-        map.put("C", 100);
+        map.put('C', 100);
         //map.put("XL", 40);
-        map.put("L", 50);
+        map.put('L', 50);
         //map.put("IX", 9);
-        map.put("X", 10);
+        map.put('X', 10);
         //map.put("IV", 4);
-        map.put("V", 5);
-        map.put("I", 1);
+        map.put('V', 5);
+        map.put('I', 1);
 
-        for (Map.Entry<String, Integer> e : map.entrySet()) {
+
+        /*for (Map.Entry<String, Integer> e : map.entrySet()) {
             String key = e.getKey();
             Integer value = e.getValue();
             while (stringQuery.contains(key)) {
@@ -63,6 +64,8 @@ public class StringToRomanNumeralConverter {
             System.out.println("Query out of scope or invalid");
         }
 
-        return finalInteger;
+        */return finalInteger;
+
+
     }
 }
