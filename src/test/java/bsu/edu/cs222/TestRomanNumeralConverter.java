@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class TestRomanNumeralConverter {
     @ParameterizedTest
-    @CsvSource({"i,1","iv,4","v,5","viii,8","ix,9",
+    @CsvSource({"i,1","iv,4","v,5","vi,6","ix,9",
             "x,10","xi,11","xii,12","xx,20", "xl,40","xli,41",
             "l,50","xc,90", "xci,91","c,100", "ci,101",
             "cd,400", "cdi, 401","d,500", "cm,900",
