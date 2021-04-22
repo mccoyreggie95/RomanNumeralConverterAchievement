@@ -23,6 +23,13 @@ public class StringToRomanNumeralConverter {
         map.put('V', 5);
         map.put('I', 1);
 
+        for (int i=0; i < stringQuery.length();i++){
+            if (i > 0 && map.get(stringQuery.charAt(i)) > map.get(stringQuery.charAt(i-1))){
+                finalInteger += map.get(stringQuery.charAt(i)) - map.get(stringQuery.charAt(i-1));
+            }
+            else finalInteger += map.get(stringQuery.charAt(i));
+        }
+
 
         /*for (Map.Entry<String, Integer> e : map.entrySet()) {
             String key = e.getKey();
