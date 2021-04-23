@@ -25,7 +25,7 @@ public class StringToRomanNumeralConverter {
 
         for (int i=0; i < stringQuery.length();i++){
             if (i > 0 && map.get(stringQuery.charAt(i)) > map.get(stringQuery.charAt(i-1))){
-                finalInteger += map.get(stringQuery.charAt(i)) - map.get(stringQuery.charAt(i-1));
+                finalInteger += map.get(stringQuery.charAt(i)) - (2 * map.get(stringQuery.charAt(i-1)));
             }
             else finalInteger += map.get(stringQuery.charAt(i));
         }
